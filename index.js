@@ -9,6 +9,8 @@ connectDb();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use ("/api/products", products);
+
 
 const PORT = process.env.PORT || 5000;
 
